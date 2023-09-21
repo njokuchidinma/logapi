@@ -27,4 +27,4 @@ EXPOSE 8000
 
 # ENTRYPOINT ["sh", "/app/entrypoint.sh"]
 
-CMD ["gunicorn", "--bind", ":8000", "--timeout", "600", "--workers", "1", "endpoint.wsgi:application"]
+CMD ["gunicorn", "--bind", ":8000", "--timeout", "600", "--workers", "1", "loginep.wsgi:application"]
